@@ -15,7 +15,7 @@ class LinkedList {
       return 0;
     }
 
-    return this.tail.index;
+    return this.tail.index + 1;
   }
 
   append(data) {
