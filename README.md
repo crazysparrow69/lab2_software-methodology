@@ -27,7 +27,7 @@ To run tests:
 $ npm test
 ```
 
-## Reference to the commit the failed CI tests
+## Reference to the commit that failed CI tests
 [Failed commit](https://github.com/crazysparrow69/lab2_software-methodology/commit/b6cc4b65112f570316863b665be9699439e25a40)
 
 ## Conclusion
