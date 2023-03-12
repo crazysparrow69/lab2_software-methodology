@@ -76,9 +76,9 @@ class LinkedList {
     if (this.length() === 0) {
       return;
     } else if (this.length() === 1) {
-      deletedElem = this.head;
-      this.head = null;
-      this.tail = null;
+        deletedElem = this.head;
+        this.head = null;
+        this.tail = null;
     } else {
       deletedElem = this.get(index);
 
@@ -186,6 +186,8 @@ class LinkedList {
   }
 
   findLast(data) {
+    if (typeof data !== "string") return;
+    
     let current = this.head;
     let index = 0;
     let foundElementIndex = null;
@@ -269,7 +271,6 @@ module.exports = LinkedList;
 
 // append()
 const list = new LinkedList();
-list.append("a"); // ["a"]
 list.append("b"); // ["a", "b"]
 list.append("c"); // ["a", "b", "c"]
 list.append("d"); // ["a", "b", "c", "d"]
