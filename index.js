@@ -41,6 +41,10 @@ class LinkedList {
   }
 
   insert(data, index) {
+    if (this.length() === 0) {
+      throw new Error("Use append() method instead");
+    }
+
     if (index < 0 || index > this.tail.index) {
       throw new Error("Incorrect index");
     }
